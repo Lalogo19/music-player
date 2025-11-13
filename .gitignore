@@ -1,0 +1,18 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (si usas npm/webpack en el futuro)
+node_modules/
+package-lock.json
+
+# Archivos temporales
+*.tmp
+.env
+.env.local

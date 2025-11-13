@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reproductor de Música - Bobinas Tesla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Visualización Tesla (canvas) -->
+    <canvas id="canvas"></canvas>
+
+    <main class="player">
+      <div class="controls-bar">
+        <button id="play" class="play-btn"></button>
+        <input id="progress" type="range" min="0" max="100" value="0" class="progress-bar">
+        <div class="volume-control">
+          <span class="volume-icon">🔊</span>
+          <input id="volume" type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
+        </div>
+      </div>
+
+      <!-- Elemento audio oculto que maneja la reproducción -->
+      <audio id="audio" src="Secrets.mp3"></audio>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
